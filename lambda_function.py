@@ -3,6 +3,7 @@ import json
 from user_backend import *
 from dotenv import load_dotenv
 #import gradio as gr
+print("Done")
 
 load_dotenv('.env')
 
@@ -57,9 +58,7 @@ def lambda_handler(event, context):
             'body': json.dumps({'error': str(e)})
         }
 
-
-
-# iface = gr.Interface(fn=chatbot_interface, 
+# iface = gr.Interface(fn=chatbot_interface, # Testing
 #                      inputs="text", 
 #                      outputs=["text","text"])
 
